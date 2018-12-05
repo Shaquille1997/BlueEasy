@@ -1,0 +1,884 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: SegoeUI;
+    src: url(../fonts/segoe-ui/segoeui.ttf);
+}
+
+@font-face {
+    font-family: SegoeUI Bold;
+    src: url(../fonts/segoe-ui/segoeuib.ttf);
+}
+
+@font-face {
+    font-family: SegoeUI Light;
+    src: url(../fonts/segoe-ui/segoe-ui-light.ttf);
+}
+
+h1 {
+    font-size: 1.875rem;
+    font-family: SegoeUI Bold;
+    margin: 0;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 54px;
+}
+
+h2, h3, h4, h5 {
+    font-family: SegoeUI Light;
+    margin: 0;
+    color: #fff;
+}
+
+h2  {
+    font-size: 1.875rem;
+    font-weight: lighter;
+}
+
+p {
+    color: #fff;
+    font-size: 0.75rem;
+    font-family: SegoeUI;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+}
+
+/* HEADER */
+header {
+    background: url(../img/background-images/hero-bg.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+.navbar {
+    background: rgba(53, 63, 70, 0.7);
+    padding: 30px 0;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.nav-item {
+    margin: 18px;
+}
+
+.nav-item a {
+    color: #fff;
+    font-size: 0.875rem;
+    font-family: SegoeUI Bold;
+}
+.nav-item a:hover {
+    color: #4bcaff;
+    box-sizing: border-box;
+    border: 2px solid #4bcaff;
+    
+}
+
+section.hero {
+    text-align: center;
+    padding: 250px 0;
+}
+
+.hero h2 {
+    background: rgba(53, 63, 70, 0.7);
+    margin-bottom: 10px;
+    font-size: 1.875rem;
+    font-family: SegoeUI Light;
+}
+
+.hero h2:last-of-type {
+    margin-bottom: 0;
+}
+
+/* END HEADER */
+
+/* SERVICES SECTION */
+section.services {
+    background: #4bcaff;
+    padding: 80px 0;
+}
+
+.services .intro {
+    margin-bottom: 30px;
+}
+
+.service-items {
+    flex-wrap: wrap;
+}
+
+.service-item {
+    width: 280px;
+}
+
+.service-item h3 {
+    margin: 10px 0;
+}
+/* END SERVICES SECTION */
+
+
+/* PORTFOLIO SECTION */
+section.portfolio {
+    padding: 80px 0;
+}
+
+.portfolio .intro {
+    margin-bottom: 80px;
+}
+
+.portfolio .intro h2 {
+    color: #515f67;
+}
+
+.filter .nav-item a {
+    color: #515f67;
+}
+
+.portfolio-items {
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    width: 274px;
+    margin-bottom: 20px;
+}
+
+.portfolio-item img {
+    width: 100%;
+}
+
+.portfolio-item:hover {
+    background: url(../img/portfolio-thumbs/portfolio-hover.png) no-repeat;
+    background-size: 100% 100%;
+}
+/* END PORTFOLIO SECTION */
+
+/*  DEFAULT-SECTION SECTION */
+section.default-section {
+    background: #515f67;
+    padding: 90px 0;
+}
+
+.default-section .intro {
+    margin-bottom: 40px;
+}
+
+.default-section .text-box {
+    width: 39.3%;
+}
+
+.default-section p {
+    margin-bottom: 30px;
+}
+
+.default-section button {
+    background: #515f67;
+    border: 2px solid #353f46;
+    color: #353f46;
+    padding: 15px 40px;
+    font-size: 0.875rem;
+    font-family: SegoeUI Bold;
+}
+/* END DEFAULT-SECTION SECTION */
+
+
+/* TWITTER SECTION */
+section.twitter {
+    background: #4bcaff;
+    padding: 90px 0;
+}
+
+.twitter .intro {
+    margin-bottom: 35px;
+}
+
+.twitter-bird  {
+    width: 40px;
+    align-self: center;
+}
+
+.twitter-bird img {
+    width: 100%;
+}
+
+.twitter p {
+    color: #fff;
+    font-size: 1.75rem;
+    font-family: SegoeUI Light;
+    font-weight: lighter;
+}
+/* END TWITTER SECTION */
+
+
+/* WHOIS SECTION */
+section.whois {
+    background: url(../img/background-images/whois-bg.jpg)no-repeat;
+    background-size: 100% 100%;
+    padding: 90px 0;
+}
+
+.whois .intro {
+    margin-bottom: 35px;
+}
+
+.whois .text-box p {
+    margin-bottom: 40px;
+}
+/*END WHOIS SECTION*/
+
+/* TESTIMONIALS SECTION */
+section.testimonials {
+    padding: 90px 0;
+}
+
+.testimonials h2, .testimonials p {
+    color: #515f67;
+}
+
+.testimonials .intro {
+    margin-bottom: 35px;
+    align-items: center;
+}
+
+.testimonials p {
+    font-size: 1.75rem;
+    font-family: SegoeUI Light;
+    font-weight: lighter;
+    margin-bottom: 35px;
+}
+
+.testimonials a {
+    font-size: 0.875rem;
+    font-family: SegoeUI Bold;
+}
+/* END TESTIMONIALS SECTION */
+
+/* CONTACT SECTION */
+section.contact {
+    background: url(../img/background-images/contact-bg.jpg) no-repeat;
+    background-size: 100% 100%;
+    padding: 90px 0;
+}
+
+.contact .intro {
+    margin-bottom: 35px;
+}
+
+.form-group {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group:last-child {
+    margin-bottom: 0;
+}
+
+.form-group label {
+    font-size: 0.875rem;
+    font-family: SegoeUI Bold;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.form-group input, .form-group textarea {
+    background: transparent;
+    border: 2px solid #fff;
+}
+
+.form-group textarea {
+    resize: none;
+    width: 100%;
+    height: 215px;
+}
+
+.contact-top {
+    margin-bottom: 40px;
+}
+
+.contact-info {
+    width: 46%;
+}
+
+.contact-info p {
+    margin-bottom: 40px;
+}
+
+.contact-info ul li {
+    color: #fff;
+    font-size: 0.875rem;
+    font-family: SegoeUI Bold;
+}
+
+.submit input {
+    padding: 25px 160px;
+    width: 370px;
+    font-size: 0.875rem;
+    font-family: SegoeUI Bold;
+    border: none;
+    background: #4bcaff;
+    color: #fff;
+    width: ;
+}
+
+
+/* END CONTACT SECTION */
+
+
+
+/* FOOTER SECTION */
+footer {
+    background: #353f47;
+    padding: 80px 0;
+}
+
+footer ul {
+    width: 290px;
+}
+
+footer li, footer p {
+    font-size: 0.75rem;
+    color: #515f67;
+}
+/* END FOOTER SECTION */
+
+
+/* costumer helper class */
+.flex-sb {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.active a {
+    color: #4bcaff;
+    padding: 10px 18px;
+    box-sizing: border-box;
+    border: 2px solid #4bcaff;
+}
+
+.filter .active a {
+    color: #4bcaff;
+}
+
+.col-3 {
+    width: 24%;
+}
+
+/* SPAN CLASSES */
+span.blue-txt {
+    color: #4bcaff;
+}
+
+span.underline-white {
+    border-bottom: 2px solid #fff;
+}
+
+span.underline-gray {
+    border-bottom: 2px solid #515f67;
+}
+
+span.twitter-profile {
+    font-weight: bold;
+}
+/* END SPAN CLASSES*/
+
+
+/*===== MEDIA QUERIES =========================*/
+@media screen and (max-width: 1170px) {
+    .container{
+        padding: 0 10px;
+    }
+
+    /* PORTFOLIO SECTION */
+    .portfolio-items {
+        justify-content: space-around;
+    }
+
+    .portfolio-item {
+        margin-right: 10px;
+    }
+    /* END PORTFOLIO SECTION */
+
+    /* WHOIS SECTION */
+    .text-boxes {
+        flex-direction: column;
+        text-align: center;
+    }
+    /* END WHOIS SECTION */
+}
+
+@media screen and (max-width: 1130px) {
+    /* SERVICE SECTION */
+    .service-items1 {
+        justify-content: space-around;
+        padding-bottom: 25px;
+        padding-top: 30px;
+    }
+
+    .service-items2 {
+        justify-content: space-around;
+        padding-bottom: 25px;
+        padding-top: 25px;
+    }
+
+    .service-items3 {
+        justify-content: space-around;
+        padding-bottom: 25px;
+        padding-top: 25px;
+    }
+
+    .service-items4 {
+        justify-content: space-around;
+        padding-bottom: 25px;
+        padding-top: 25px;
+    }
+
+
+
+    /* END SERVICE SECTION */
+}
+
+@media screen and (max-width: 1000px) {
+    /* DEFAULT-SECTION SECTION */
+    .default-section .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .default-section .text-box {
+        width: 100%;
+        text-align: center;
+    }
+
+    .default-section .vimeo-box {
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    .default-section .vimeo-box iframe {
+        width: 100%;
+    }
+    /* DEFAULT-SECTION SECTION */
+}
+
+@media screen and (max-width: 680px) {
+    .nav-item {
+        margin: 18px 12px 0 0;
+    }
+
+    /* sections padding */
+    section.services, section.portfolio, section.default-section, section.twitter, section.whois, section.testimonials, section.contact {
+        padding: 20px 0;
+    }
+    /* end sections padding */
+
+    /* HERO SECTION */
+    section.hero {
+        padding: 50px 0;
+    }
+    /* END HERO SECTION */
+
+    
+
+    /* CONTACT SECTION */
+    .contact-top {
+        flex-direction: column-reverse;
+    }
+
+    .contact-info {
+        margin-bottom: 25px;
+    }
+    /* END CONTACT SECTION*/
+
+    /* FOOTER */
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer ul {
+        margin-bottom: 25px;
+    }
+    /* END FOOTER */
+}
+
+
+@media screen and (max-width: 660px) {
+    /* HEADER */
+    .navbar .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav-items {
+        margin-top: 10px;
+    }
+    /* END HEADER */
+}
+
+@media screen and (max-width: 569px) {
+    .intro {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .intro .twitter-bird, .intro .double-quote {
+        margin-left: 20px;
+    }
+
+    /* SERVICE SECTION */
+    .service-item {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .service-item:last-child {
+        margin-bottom: 0;
+    }
+    /* END SERVICE SECTION */
+
+    /* PORTFOLIO SECTION */
+    .portfolio .intro {
+        flex-direction: column;
+    }
+    /* END PORTFOLIO SECTION */
+
+    /* TWITTER SECTION */
+    .twitter p {
+        text-align: center;
+    }
+    /* END TWITTER SECTION */
+
+    /* TESTIMONIALS SECTION */
+    .testimonials .container {
+        text-align: center;
+    }
+    /* END TESTIMONIALS SECTION */
+
+    /* CONTACT SECTION */
+    .contact form {
+        text-align: center;
+    }
+
+    .contact-top {
+        align-items: center;
+    }
+
+    .submit, .submit input {
+        width: 100%;
+        padding: 25px 0;
+    }
+    /* END CONTACT SECTION*/
+}
+
+@media screen and (max-width: 420px) {
+    .nav-items {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .flex-sb{
+         flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
